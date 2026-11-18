@@ -1,6 +1,6 @@
 // Views publik: landing, form, bukti, login — desain mengikuti output Stitch
 (function () {
-  const LOGO = 'https://lh3.googleusercontent.com/aida-public/AB6AXuCe6fzOM-Th5LQdvSxmrcDGWSZq9z-acP487PLaD52OaPjoGvmQpHgarRdRxrgy_jxkPDTah4A8a_hMyp5v9TZ9h6-hqesWAggHs1jTJR3aiEK8KgRTJoXZV6FVuozA9tYJu13Ruduj-BS5EAAGXE4Cdpdsv9KWDjU0kGzXE2aUi67K39_ASK_TWV9J69cq4a8Wat2D9FjcLuomH4JO3_S_oR7-ngHNL8iguDhdAdI';
+  const LOGO = 'assets/logo.png';
 
   function header(active) {
     const nav = [['beranda', '#/', 'Beranda'], ['form-buku-tamu', '#/form', 'Form Buku Tamu'], ['panduan', '#/panduan', 'Panduan Pengunjung'], ['dasbor', '#/dashboard', 'Dasbor Petugas'], ['data-tamu', '#/data-tamu', 'Data Tamu']];
@@ -179,7 +179,7 @@
     API.get('getStats').then(s => {
       document.getElementById('stat-today').textContent = s.today;
       document.getElementById('stat-total').textContent = s.total;
-    }).catch(() => {});
+    }).catch(() => { });
   };
 
   App.views.panduan = (el) => {
@@ -219,6 +219,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-12 rounded-xl overflow-hidden shadow-xl bg-surface-card">
           <div class="lg:col-span-5 relative min-h-[460px] lg:min-h-[820px] flex flex-col justify-between p-space-xl text-on-primary bg-navy-hero overflow-hidden">
             <div class="absolute inset-0 z-0">
+              <img class="w-full h-full object-cover object-center" alt="Gedung Kanwil Kemenkum NTT" src="assets/gedung.jpg">
               <div class="absolute inset-0 bg-gradient-to-t from-navy-hero via-navy-hero/70 to-navy-hero/30"></div>
               <div class="absolute top-0 right-0 w-32 h-full opacity-10 bg-[radial-gradient(#D97706_1.5px,transparent_1.5px)] [background-size:12px_12px]"></div>
             </div>
@@ -356,7 +357,7 @@
       document.getElementById('visit-date').value = d.toLocaleDateString('id-ID', { day: '2-digit', month: '2-digit', year: 'numeric' });
     }
     setInterval(upd, 1000); upd();
-    API.get('getStats').then(s => document.getElementById('form-stat').textContent = s.today).catch(() => {});
+    API.get('getStats').then(s => document.getElementById('form-stat').textContent = s.today).catch(() => { });
     document.getElementById('guest-form').addEventListener('submit', async (e) => {
       e.preventDefault();
       const d = Object.fromEntries(new FormData(e.target));
