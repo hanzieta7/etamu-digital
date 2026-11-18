@@ -9,7 +9,7 @@
       <div class="h-1 bg-gradient-to-r from-tenun-red via-tenun-gold to-tenun-red w-full"></div>
       <div class="h-20 max-w-7xl mx-auto px-gutter flex items-center justify-between gap-space-md">
         <a href="#/" class="flex items-center gap-space-md min-w-0">
-          <img alt="Logo Pengayoman Kemenkumham NTT" class="h-8 w-auto object-contain" src="${LOGO}">
+          <img alt="Logo Pengayoman Kemenkum NTT" class="h-8 w-auto object-contain" src="${LOGO}">
           <div class="hidden sm:flex flex-col justify-center leading-tight">
             <span class="font-label-sm text-label-sm uppercase tracking-wider text-text-primary font-bold">Kementerian Hukum Republik Indonesia</span>
             <span class="font-caption text-caption text-secondary font-semibold">Kantor Wilayah Nusa Tenggara Timur</span>
@@ -41,7 +41,7 @@
           <div class="space-y-space-sm">
             <div class="flex items-center gap-space-sm">
               <span class="material-symbols-outlined text-tenun-gold">account_balance</span>
-              <span class="font-title-md text-title-md font-bold tracking-tight">KEMENKUMHAM NTT</span>
+              <span class="font-title-md text-title-md font-bold tracking-tight">KEMENKUM NTT</span>
             </div>
             <p class="font-body-sm text-body-sm text-surface-variant">Sistem Informasi Buku Tamu Digital Pelayanan Terpadu Satu Pintu (PTSP) Kantor Wilayah Nusa Tenggara Timur.</p>
             <div class="inline-flex items-center gap-space-xs bg-surface-card/10 px-space-md py-1 rounded-full border border-surface-card/20">
@@ -84,7 +84,7 @@
             </div>
             <div class="inline-flex items-center gap-space-xs bg-navy-card/80 px-space-md py-1.5 rounded-full text-surface-variant font-caption text-caption">
               <span class="material-symbols-outlined text-[16px] text-status-active-green">verified_user</span>
-              <span>PTSP Berintegritas • WBK Kemenkumham NTT</span>
+              <span>Berintegritas • WBK Kemenkum NTT</span>
             </div>
           </div>
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center pt-space-xs">
@@ -388,7 +388,7 @@
           </div>
           <div class="inline-flex items-center gap-space-xs bg-surface-container-lowest/10 px-space-md py-1 rounded-full mb-space-sm backdrop-blur-sm"><span class="w-2 h-2 rounded-full bg-status-active-green animate-ping"></span><span class="font-label-sm text-label-sm text-tenun-gold-light uppercase tracking-wider">Tiket Terbit Otomatis • Terverifikasi PTSP</span></div>
           <h1 class="font-headline-lg text-headline-lg md:text-display font-extrabold max-w-2xl leading-tight">Kunjungan Anda Berhasil Dicatat!</h1>
-          <p class="font-body-md text-body-md text-surface-variant max-w-xl mt-space-xs">Data Anda telah terekam resmi dalam Buku Tamu Digital PTSP Kanwil Kemenkumham NTT.</p>
+          <p class="font-body-md text-body-md text-surface-variant max-w-xl mt-space-xs">Data Anda telah terekam resmi dalam Buku Tamu Digital PTSP Kanwil Kemenkum NTT.</p>
           <div class="mt-space-lg inline-flex items-center gap-space-md bg-navy-card/90 px-space-lg py-space-sm rounded-xl shadow-xl">
             <div class="text-left"><span class="font-caption text-caption text-text-muted uppercase tracking-wider block">Nomor Registrasi Tamu</span><span class="font-headline-sm text-headline-sm font-extrabold tracking-widest text-tenun-gold" id="ticket">${d.ticket}</span></div>
             <div class="h-8 w-px bg-surface-card/10"></div>
